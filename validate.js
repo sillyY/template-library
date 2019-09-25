@@ -29,4 +29,12 @@ export const valiName = (value, callback) => {
       callback()
     }
   }
+
+  export const valiEmail = (value, callback) => {
+    if(!/^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/.test(value)) {
+      callback(new Error('请输入正确的邮箱'))
+    }else {
+      callback()
+    }
+  }
   
