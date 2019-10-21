@@ -1,5 +1,5 @@
 // 获取上月1号00:00:00时间戳
-export function getPrevMonth_First() {
+export function getPrevMonth_first() {
   let start =
       moment()
         .subtract('month', 1)

@@ -1,5 +1,5 @@
 // 获取上周周一00:00:00时间戳
-export function getLastWeek_First() {
+export function getLastWeek_first() {
   let week = moment().week()
   let start = moment().subtract(week + 7, 'days'),
     date = moment(start)

@@ -1,5 +1,5 @@
 // 获取当月1号00:00:00点时间戳
-export function getCurrentMonth_First() {
+export function getCurrentMonth_first() {
   let now = moment(),
     year = now.year(),
     month = now.month() + 1,

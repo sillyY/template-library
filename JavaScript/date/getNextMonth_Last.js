@@ -1,5 +1,5 @@
 // 获取下月最后一天23:59:59时间戳
-export function getNextMonth_Last() {
+export function getNextMonth_last() {
   let start =
       moment()
         .subtract('month', -1)

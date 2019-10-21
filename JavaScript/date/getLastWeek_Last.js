@@ -1,5 +1,5 @@
 // 获取上周最后一天时间戳
-export function getLastWeek_Last() {
+export function getLastWeek_last() {
   let week = moment().week()
   let end = moment().subtract(week + 1, 'days'),
     date = moment(end)
