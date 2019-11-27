@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:w": "tsc -w"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Waterer-League/utils.git"
@@ -13,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Waterer-League/utils/issues"
   },
-  "homepage": "https://github.com/Waterer-League/utils#readme"
+  "homepage": "https://github.com/Waterer-League/utils#readme",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
 }
