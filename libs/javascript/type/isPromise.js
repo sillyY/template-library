@@ -1,8 +1,10 @@
-// 是否是Promise
+/*
+ * 是否是Promise
+ */
 export function isPromise(val) {
   return (
     this.isDef(val) &&
-    typeof val.then === 'function' &&
-    typeof val.catch === 'function'
-  )
+    typeof val.then === "function" &&
+    typeof val.catch === "function"
+  );
 }

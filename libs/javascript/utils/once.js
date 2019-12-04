@@ -1,10 +1,12 @@
-// 确保一个函数只执行一次
+/*
+ * 确保一个函数只执行一次
+ */
 export function once(fn) {
-  let called = false
+  let called = false;
   return function() {
     if (!called) {
-      called = true
-      fn.apply(this, arguments)
+      called = true;
+      fn.apply(this, arguments);
     }
-  }
+  };
 }

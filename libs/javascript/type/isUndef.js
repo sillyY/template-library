@@ -1,4 +1,6 @@
-// 检查值是否无效值
+/*
+ * 检查值是否无效值
+ */
 export function isUndef(v) {
-  return v === undefined || v === null
+  return v === undefined || v === null;
 }

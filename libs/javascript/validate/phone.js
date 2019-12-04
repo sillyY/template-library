@@ -1,3 +1,6 @@
+/*
+ * 手机号验证
+ */
 export const valiPhone = (value, callback) => {
   if (value === '') {
     callback(new Error('请输入联系方式'))

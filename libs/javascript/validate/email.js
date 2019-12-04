@@ -1,3 +1,6 @@
+/*
+ * 邮箱验证
+ */
 export const valiPhone = (value, callback) => {
   if (value === '') {
     callback(new Error('请输入邮箱'))

@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-27 13:45:01
+ * @LastEditTime: 2019-12-03 21:35:33
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /template-library/README.md
+ -->
 ## 项目需求
 开发一个解析工具，要求读取 libs 的文件内容，生成一个 json 文件
 
@@ -18,8 +26,8 @@
   },
   {
     "state": "None",
-    "id": 2,
-    "fid": "2",
+    "id": 1,
+    "fid": "1",
     "name": "转数组",
     "slug": "to-array",
     "category": "type",
@@ -27,8 +35,8 @@
   },
   {
     "state": "None",
-    "id": 3,
-    "fid": "3",
+    "id": 2,
+    "fid": "2",
     "name": "转数字",
     "slug": "to-number",
     "category": "type",

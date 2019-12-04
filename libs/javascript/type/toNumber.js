@@ -1,6 +1,7 @@
-// 将转转成数字
+/*
+ * 将转转成数字
+ */
 export function toNumber(val) {
-    const n = parseFloat(val)
-    return isNaN(n) ? val : n
-  }
-  
+  const n = parseFloat(val);
+  return isNaN(n) ? val : n;
+}

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "build:w": "tsc -w"
+    "build": "node scripts/build.js",
+    "deploy": "sh deploy.sh"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Waterer-League/utils#readme",
   "dependencies": {
     "chalk": "^3.0.0"
+  },
+  "devDependencies": {
+    "readdir": "^0.1.0"
   }
 }

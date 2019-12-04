@@ -1,4 +1,6 @@
-// 检测值是否为false(===)
+/*
+ * 检测值是否为false(===)
+ */
 export function isFalse(v) {
-  return v === false
+  return v === false;
 }

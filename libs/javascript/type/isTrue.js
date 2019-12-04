@@ -1,4 +1,6 @@
-// 检测值是否为true(===)
+/*
+ * 检测值是否为true(===)
+ */
 export function isTrue(v) {
-  return v === true
+  return v === true;
 }
