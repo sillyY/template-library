@@ -11,7 +11,7 @@ file.homeDir = function() {
   return path.join(file.projectHomeDir(), "./libs");
 };
 file.configDir = function() {
-    return path.join(file.projectHomeDir(), './template.json')
+    return path.join(file.projectHomeDir(), './config.json')
 }
 file.readDir = function(path) {
   return readDir.readSync(path, null, readDir.ABSOLUTE_PATHS);
