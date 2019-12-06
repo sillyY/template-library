@@ -5,7 +5,7 @@ class JSTemplate {
     this._fid = 0;
     this._template = [];
     this._language = "javascript";
-    this._lang = "js";
+    this._lan = "js";
   }
   get template() {
     return this._template;
@@ -15,7 +15,8 @@ class JSTemplate {
       state: this._state,
       id: ++this._id,
       fid: ++this._fid,
-      language: this._language
+      language: this._language,
+      lan: this._lan
     });
     this._template.push(obj);
   }
@@ -26,13 +27,13 @@ class JSTemplate {
       this._push({
         name,
         category: "",
-        slug: args[0].replace(`.${this._lang}`, "")
+        slug: args[0].replace(`.${this._lan}`, "")
       });
     } else {
       this._push({
         name,
         category: args[0],
-        slug: args[1].replace(`.${this._lang}`, "")
+        slug: args[1].replace(`.${this._lan}`, "")
       });
     }
   }
