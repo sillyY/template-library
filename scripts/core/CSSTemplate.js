@@ -24,13 +24,13 @@ class CSSTemplate {
     if (args.length === 1) {
       this._push({
         name,
-        categroy: "",
+        category: "",
         slug: args[0].replace(`.${this._lang}`, "")
       });
     } else {
       this._push({
         name,
-        categroy: args[0],
+        category: args[0],
         slug: args[1].replace(`.${this._lang}`, "")
       });
     }
