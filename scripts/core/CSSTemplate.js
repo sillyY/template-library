@@ -1,18 +1,10 @@
-/*
- * @Author: your name
- * @Date: 2019-12-03 21:31:33
- * @LastEditTime: 2019-12-03 22:54:36
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /template-library/scripts/core/CSSTemplate.js
- */
 class CSSTemplate {
   constructor() {
     this._state = "None";
     this._id = 0;
     this._fid = 0;
     this._template = [];
-    this._language = "javascript";
+    this._language = "css";
   }
   get template() {
       return this._template

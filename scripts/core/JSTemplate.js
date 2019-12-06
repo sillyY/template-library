@@ -1,12 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2019-12-03 21:31:39
- * @LastEditTime: 2019-12-03 22:54:47
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /template-library/scripts/core/JSTemplate.js
- */
-
 class JSTemplate {
   constructor() {
     this._state = "None";

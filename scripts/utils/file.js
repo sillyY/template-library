@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2019-11-27 13:52:16
- * @LastEditTime: 2019-12-03 22:58:35
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /template-library/scripts/utils/file.js
- */
 const path = require("path");
 const fs = require("fs")
 const readDir = require("readdir");

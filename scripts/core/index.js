@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2019-12-03 21:22:09
- * @LastEditTime: 2019-12-03 22:58:42
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /template-library/scripts/core/index.js
- */
 const file = require("../utils/file");
 const cssTemplate = require("./CSSTemplate");
 const jsTemplate = require("./JSTemplate");
