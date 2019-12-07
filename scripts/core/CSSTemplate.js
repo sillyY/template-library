@@ -1,6 +1,6 @@
 class CSSTemplate {
   constructor() {
-    this._state = "None";
+    this._state = 3;
     this._id = 0;
     this._fid = 0;
     this._template = [];
