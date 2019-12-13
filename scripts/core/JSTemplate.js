@@ -1,11 +1,11 @@
+const file = require("../utils/file");
 class JSTemplate {
   constructor() {
     this._state = 2;
     this._id = 0;
-    this._fid = 0;
     this._template = [];
-    this._language = "javascript";
-    this._lan = "js";
+    this.language = "javascript";
+    this._extname = ".js";
   }
   get template() {
     return this._template;
@@ -14,26 +14,25 @@ class JSTemplate {
     Object.assign(obj, {
       state: this._state,
       id: ++this._id,
-      fid: ++this._fid,
-      language: this._language,
-      lan: this._lan
+      language: this.language,
+      extname: this._extname
     });
     this._template.push(obj);
   }
-  add(name, args) {
+  add(description, args) {
     if (args && !args.length) return;
 
     if (args.length === 1) {
       this._push({
-        name,
+        name: file.basename(args[0]),
         category: "",
-        slug: args[0].replace(`.${this._lan}`, "")
+        description
       });
     } else {
       this._push({
-        name,
+        name: file.basename(args[1]),
         category: args[0],
-        slug: args[1].replace(`.${this._lan}`, "")
+        description
       });
     }
   }

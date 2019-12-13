@@ -13,6 +13,9 @@ file.homeDir = function() {
 file.configDir = function() {
     return path.join(file.projectHomeDir(), './config.json')
 }
+file.basename = function(fullpath) {
+  return path.basename(fullpath, path.extname(fullpath))
+}
 file.readDir = function(path) {
   return readDir.readSync(path, null, readDir.ABSOLUTE_PATHS);
 };
