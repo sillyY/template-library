@@ -1,12 +1,12 @@
 const file = require("./utils/file");
 const path = require("path");
 
-function getProperty(path) {
+function getProperty(fullpath) {
   let result;
-  const data = file.data(path);
+  const data = file.data(fullpath);
 
   result = pickComments(data);
-  result.name = path.basename(path);
+  result.name = path.basename(fullpath);
   result.content = data;
   return result;
 }
