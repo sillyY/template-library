@@ -1,7 +1,4 @@
 const file = require("./utils/file");
-const createFactory = require("./core/index");
-const cssTemplate = require("./core/CSSTemplate");
-const jsTemplate = require("./core/JSTemplate");
 
 function getProperty(path) {
   const data = file.data(path);
