@@ -1,9 +1,14 @@
 const file = require("./utils/file");
-const path = require('path')
+const path = require("path");
 
 function getProperty(path) {
+  let result;
   const data = file.data(path);
-  return pickComments(data);
+  
+  result = pickComments(data);
+  result.name = path.basename(file);
+  result.content = data;
+  return result;
 }
 
 function pickComments(data) {
@@ -28,7 +33,6 @@ async function build() {
 
   for (let file of files) {
     const property = getProperty(file);
-    property.name = path.basename(file)
     chain.push(property);
   }
 
