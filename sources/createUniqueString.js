@@ -1,5 +1,7 @@
 /*
- * 创建唯一字符串
+ * @title: createUniqueString
+ * @description: 创建唯一字符串
+ * @source: 未知
  */
 export function createUniqueString() {
   const timestamp = +new Date() + "";

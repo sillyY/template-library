@@ -1,5 +1,7 @@
 /*
- * 密码加密
+ * @title: encodePwd
+ * @description: 密码加密
+ * @source: 未知
  */
 export function encodePwd(str) {
   let out = "";
