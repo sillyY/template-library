@@ -1,4 +1,5 @@
 const file = require("./utils/file");
+const path = require('path')
 
 function getProperty(path) {
   const data = file.data(path);
@@ -27,6 +28,7 @@ async function build() {
 
   for (let file of files) {
     const property = getProperty(file);
+    property.name = path.basename(file)
     chain.push(property);
   }
 
