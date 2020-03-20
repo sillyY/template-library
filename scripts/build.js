@@ -4,9 +4,9 @@ const path = require("path");
 function getProperty(path) {
   let result;
   const data = file.data(path);
-  
+
   result = pickComments(data);
-  result.name = path.basename(file);
+  result.name = path.basename(path);
   result.content = data;
   return result;
 }
